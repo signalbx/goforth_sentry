@@ -1,0 +1,43 @@
+version: 2
+
+sources:
+  - name: calltrackingmetrics
+    tables:
+      - name: goforth_calls_export
+
+  - name: fleetcomplete_5tran
+    tables:
+      - name: events_email
+      - name: idle_email
+      - name: speeding_email
+
+  - name: google_ads_new
+    tables:
+      - name: fivetran_audit
+
+  - name: google_sheets
+    tables:
+      - name: fivetran_audit
+
+  - name: google_sheets_internal
+    tables:
+      - name: fivetran_audit
+      - name: fivetran_audit
+
+  - name: pestroutes
+    tables:
+      - name: v_customers
+      - name: v_payments_indepth
+      - name: v_subscriptions
+
+  - name: qbo_5tran
+    tables:
+      - name: fivetran_audit
+
+  - name: pestroutes_5tran
+    tables:
+      - name: time_onsite_rpt
+      - name: tech_reservices_rpt
+      - name: tech_sales_rpt
+      - name: tech_stats_rpt
+      - name: time_onsite_report
